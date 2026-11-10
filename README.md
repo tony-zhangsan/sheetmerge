@@ -1,4 +1,4 @@
-# sheetmerge
+﻿# sheetmerge
 
 轻量表格合并、去重、匹配与汇总工具。面向「每个月都要手工合并十几张 Excel」的运营和财务场景，用一条命令代替复制粘贴。
 
@@ -21,7 +21,7 @@
 
 ```bash
 pip install openpyxl
-git clone https://github.com/<your-name>/sheetmerge.git
+git clone https://github.com/tony-zhangsan/sheetmerge.git
 cd sheetmerge
 python -m sheetmerge --version
 ```
