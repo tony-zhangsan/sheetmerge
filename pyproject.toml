@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sheetmerge"
+version = "0.1.0"
+description = "轻量表格合并、去重、匹配与汇总工具（.xlsx / .csv）"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Zhang Hao" }]
+keywords = ["excel", "xlsx", "csv", "data-cleaning", "cli", "openpyxl"]
+dependencies = ["openpyxl>=3.1"]
+
+[project.scripts]
+sheetmerge = "sheetmerge.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+include = ["sheetmerge*"]
